@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 import {
   BellIcon,
@@ -5,7 +6,7 @@ import {
   ChevronDownIcon,
   HomeIcon,
   UserGroupIcon,
-  ViewGroupIcon,
+  ViewGridIcon,
 } from "@heroicons/react/24/solid";
 import {
   FlagIcon,
@@ -14,6 +15,8 @@ import {
   ShoppingCartIcon,
 } from "@heroicons/react/24/outline";
 import HeaderIcon from "./HeaderIcon";
+import { BsSearch,BsFillChatDotsFill } from 'react-icons/bs';
+import { HiViewGrid } from 'react-icons/hi';
 
 function Header() {
   return (
@@ -28,9 +31,9 @@ function Header() {
         />
 
         <div className="flex ml-2 items-center rounded-full bg-gray-100 p-2">
-          <PlayIcon className="h-6 text-gray-600 " />
+          <BsSearch className="h-6 text-gray-600 " />
           <input
-            className="flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink"
+            className=" hidden md:inline-flex ml-2 items-center bg-transparent outline-none placeholder-gray-500 flex-shrink"
             type="text"
             placeholder="serch facebook"
           ></input>
@@ -49,6 +52,14 @@ function Header() {
       </div>
 
       {/* right */}
+      <div className="flex items-center sm:space-x-2 justify-end">
+       {/* profile pic */}
+         <p className="whitespace-nowrap font-semibold pr-3" > Sonny Sangha </p>
+         <HiViewGrid className="icon" />
+         <BsFillChatDotsFill className="icon" />
+         <BellIcon className="icon" />
+         <ChevronDownIcon className="icon" />
+      </div>
     </div>
   );
 }

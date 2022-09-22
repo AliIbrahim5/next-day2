@@ -10,10 +10,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-     
       {/* Header */}
 
-      <Header/>
+      <Header />
 
       <main>
         {/* sidbar */}
@@ -22,4 +21,15 @@ export default function Home() {
       </main>
     </div>
   );
+}
+
+export async function getServerSidProps(context) {
+  //  get the user
+  const session = await getSession(context);
+
+  return {
+    props: {
+      session,
+    },
+  };
 }

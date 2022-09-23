@@ -3,6 +3,7 @@ import Header from "../components/Header";
 import { getSession } from "next-auth/react";
 import Login from "../components/Login";
 import Sidebar from "../components/Sidebar";
+import Feed from "../components/Feed";
 export default function Home({ session }) {
   // if (!session) return <Login/>;
   return (
@@ -21,6 +22,7 @@ export default function Home({ session }) {
         {/* sidbar */}
         <Sidebar />
         {/* feed */}
+        <Feed/>
         {/* widgest */}
       </main>
     </div>

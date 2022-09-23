@@ -67,7 +67,7 @@ function Header() {
        /> */}
        
       
-         <p className="whitespace-nowrap font-semibold pr-3" > Sonny Sangha </p>
+         <p className="hidden lg:inline-flex text-sm whitespace-nowrap font-semibold pr-3" > Sonny Sangha </p>
          <HiViewGrid className="icon" />
          <BsFillChatDotsFill className="icon" />
          <BellIcon className="icon" />

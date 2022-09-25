@@ -44,7 +44,7 @@ function Header() {
 
       {/* center */}
       <div className="flex justify-center flex-grow">
-        <div className="flex space-x-6 md:space-x-2">
+        <div className="flex space-x-100 md:space-x-2">
           <HeaderIcon active Icon={HomeIcon} />
           <HeaderIcon Icon={FlagIcon} />
           <HeaderIcon Icon={PlayIcon} />
